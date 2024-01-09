@@ -59,7 +59,7 @@ $(function() {
     $("#fruit1").mouseover(function() {
         score++;
         $("#score").html(score);
-        var audio = new Audio('/sounds/slice.mp3'); //2. play sound on slice
+        var audio = new Audio('sounds/slice.mp3'); //2. play sound on slice
         audio.play();
 
         //make fruit stop going down
@@ -135,7 +135,7 @@ $(function() {
 
     function chooseFruit() {
         var randomNu = Math.round(Math.random() * 8);
-        $("#fruit1").attr('src', '/img/' + fruit[randomNu] + '.png');
+        $("#fruit1").attr('src', 'img/' + fruit[randomNu] + '.png');
     }
 
     function stopAction() {
