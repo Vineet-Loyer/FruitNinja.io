@@ -1,0 +1,169 @@
+html{
+    height:100%;
+    background: radial-gradient(circle,#fff,#ccc);
+}
+#container{
+    height:600px;
+    width:750px;
+    background-color:#9ADCFF;
+    margin:10px auto;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px 0px gold;
+    position:relative;
+
+}
+
+#score{
+    background-color: orange;
+    color:white;
+    padding:10px;
+    position: absolute;
+    left:700px;
+    box-shadow: 0px 4px 3px 0px orangered;
+    border-radius: 10px;
+    
+    
+}
+ 
+#correct{
+    /*position: relative;*/
+    left:200px;
+    background-color: green;
+    color: white;
+    padding: 11px;
+    border-radius: 10px;
+    display: none; /*temperory after js we change */
+}
+
+
+#wrong{
+    margin:auto;
+    /*position: relative;*/
+    left:100px;
+    background-color: red;
+    color: white;
+    padding: 11px;
+    border-radius: 10px;
+    display:none; /*temperory basis */
+} 
+
+#playzone{
+    width:600px;
+    height:400px;
+    margin:50px auto 10px auto;
+    font-size: 100px;
+    text-align: center;
+    background-color:white;
+    box-shadow: 0px 4px 3px 0px #051367;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#instruction{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 50px;
+    width: 450px;
+    height:50px;
+    margin:50px auto 10px auto;
+    font-size: 20px;
+    text-align: center;
+    background-color: #A267AC;
+    color: white;
+    box-shadow: 0px 4px 3px 0px purple;
+}
+
+#startreset:hover{
+    background-color: green;
+    box-shadow: 0px 4px  #142F43;
+    color:white;
+}
+#startreset:active{
+    box-shadow: 0px 0px  black;
+    top: 4px;
+}
+
+#startreset{
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    padding:5px;
+    background-color: white;
+    margin:0 auto;
+    border-radius: 5px;
+    text-align: center;
+    
+    box-shadow: 0px 4px grey;
+   /* position: relative;*/
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+#trialsLeft{
+    font-family: 'Montserrat', sans-serif;
+    width: 80px;
+    padding:10px;
+    top:20px;
+    background-color: greenyellow;
+    border-radius: 3px;
+    box-shadow: 0px 4px green;
+    position: absolute;
+    /*visibility: hidden;temperory the element is still present in page where as display hide the element and element wont interact with other element*/
+    display:none;
+}
+#gameOver{
+    display: none;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size:2.5em;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    height:300px;
+    position:absolute;
+    align-items: center;
+    top:170px;
+    z-index: 2;
+    display: none;
+    left:150px;
+    width:500px;
+    background: linear-gradient(0deg, rgba(226,164,29,1) 0%, rgba(250,12,0,1) 100%);
+}
+
+.blur{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+i{
+    color:red;
+}
+.fruit{
+    display:none;
+    max-width:100px;
+    max-height: 100px;
+    position: absolute;
+
+}
+
+.blur{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+footer{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}

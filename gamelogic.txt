@@ -1,0 +1,27 @@
+//are we already playing?
+   //yes-->reload page
+   //no
+   1. create random fruit
+   2. move fruit down 1 step
+       if( is fruit too low)
+       {
+           if(any trials left)
+           {
+               remove one heart
+           }
+           else
+           {
+               show game over
+               and change button text to start game
+           }
+       }
+       else{
+           goto step 2
+       }
+    3. change button text to reset game
+    4. show trials left box
+
+    other functions
+    1. slice fruit
+    2. play sound on slice
+    3. increase score by one
